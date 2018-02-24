@@ -23,10 +23,10 @@ eFormsBuilder.config(['$routeProvider', '$locationProvider', function($routeProv
         templateUrl: 'views/home.html',
         controller: 'HomeController'
     }).
-    // when('/viewSheet/:id', {
-    //     templateUrl: 'views/viewSheet.html',
-    //     controller: 'ViewSheetController',
-    // }).
+    when('/shortcuts', {
+        templateUrl: 'views/shortcuts.html',
+        controller: 'ShortcutsController',
+    }).
     otherwise({
         redirectTo: '/home'
     });

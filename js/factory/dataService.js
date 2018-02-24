@@ -4,17 +4,35 @@ eFormsBuilder.factory("Data",
 
 		};
 
-		var getPlaceholder = function(){
+		var getTextContents = function(){
+			if (typeof(factoryVariables.text) != 'undefined'){
+				var arr = [];
+
+				var lines = factoryVariables.text.split("\n");
+
+				$.each(lines, function(n, line) {
+					if (line.charAt(0) == '['){
+						line = line.replace(/[^a-zA-Z ]/g, "");
+						arr.push({
+							name: line
+						});
+					}
+				});
+							return arr;
+
+			} else {
+				return;
+			}
 
 		};
 
-		var setPlaceholder = function(){
-
+		var setTextContents = function(text){
+			factoryVariables.text = text;
 		};
 
 		return {
-			getPlaceholder: getPlaceholder,
-			setPlaceholder: setPlaceholder
+			getTextContents: getTextContents,
+			setTextContents: setTextContents
 		}
 	}
 );

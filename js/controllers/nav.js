@@ -10,7 +10,6 @@ eFormsBuilder.controller('NavigationController',
     function($scope, $http, $location, Data, $rootScope, $routeParams) {
 
 		$scope.prompts = txtNavigation;
-		console.log($scope.prompts);
 
     }
 ]);

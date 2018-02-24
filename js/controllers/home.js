@@ -10,17 +10,17 @@ eFormsBuilder.controller('HomeController',
     function($scope, $http, $location, Data, $rootScope, $routeParams) {
 
         $scope.prompts = txtSideMenu;
-        var spreadsheet = {};
+        var shortcuts ;
 
         $scope.menuShowFilename = function() {
-            // var spreadsheet = Data.getExcel();
+            shortcuts = Data.getTextContents();
 
             var showFilename = false;
-            if (typeof(spreadsheet.filename) != 'undefined'){
-                $scope.excelFilename = spreadsheet.filename;
-                $scope.sheetNames    = spreadsheet.sheetNames;
+            if (typeof(shortcuts) != 'undefined'){
+                $scope.excelFilename = 'catsndogs';
+                $scope.sheetNames    = ["View Shortcuts"];
                 showFilename = true;
-                $scope.prompts.menuOpenFile = txtSideMenu.file + ': ' + spreadsheet.filename;
+                $scope.prompts.menuOpenFile = txtSideMenu.file + ': ' + 'raininspain';
             }
             return showFilename;
         }

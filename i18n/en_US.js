@@ -3,5 +3,11 @@ var txtNavigation = {
 };
 
 var txtSideMenu = {
-	menuOpenFile : "Choose Shortcut File"
+	menuOpenFile : "Choose Shortcut File",
+	file: "Shortcut File"
+};
+
+var txtCommon = {
+    btnDone: 'Done',
+    sheetName: 'Worksheet'
 };
