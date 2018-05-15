@@ -2,28 +2,39 @@
   <!-- <div class="col-md-8"> -->
     
     <h4 class="alert alert-cdk">{{sheetName}}
-      <div class="col-sm-3 col-md-3 pull-right has-feedback">
-        <div class="input-group-sm moveUp">
+      <div class="col-sm-3 col-md-3 pull-right">
+
+        <div class="input-group">
           <input type="text" 
                  class="form-control" 
-                 ng-change="searchGrid()" 
-                 placeholder="search"
-                 ng-model="searchText" />
-          <i class="form-control-feedback moveUp moveLeft glyphicon glyphicon-filter"></i>                   
-        </div>
+                 placeholder="search" 
+                 name="search"
+                 ng-change="searchGrid()"
+                 ng-model="searchText">
+          <div class="input-group-btn">
+            <div class="btnGlyph" ng-click="clearSearch();">
+              <i class="glyphicon glyphicon-refresh"></i>
+            </div>
+          </div>
+        </div>  
+
       </div> 
     </h4>     
 
     <div>
       <div class="grid" 
-           ui-grid-edit
-           ui-grid-selection
-           ui-grid-cellNav
-           style="font-size: 12px;"
-           ui-grid="gridOptions" ui-grid-exporter>
+           ui-grid="gridOptions" 
+           ui-grid-pagination 
+           ui-grid-exporter 
+           ui-grid-resize-columns 
+           ui-grid-auto-resize 
+           ui-grid-selection 
+           style="font-size: 10px;">
       </div>
+
     </div>
     <br><br>
+
     <button class="btn btn-lg btn-cdk btn-block" 
             type="button" 
             ng-click="btnDone();">{{prompts.btnDone}}

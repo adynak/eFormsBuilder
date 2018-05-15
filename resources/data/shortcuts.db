@@ -1,3 +1,57 @@
+[Signatures - Buyer and Cobuyer Trade 1 B/C/BC/CB/O scenario]
+WDMCopyControl("ADPShortcut")
+
+if(eval(Trd1RegToBorC_std)="B" | eval(Trd1RegToBorC_std)="O" | eval(Trd1RegToBorC_std)="BC" | eval(Trd1RegToBorC_std)="")
+
+  color(0, 0, 0)
+  layer(5)
+  move(0.25, 0.25)
+  signature("", "", 0.410, 2.421, "Buyer Signature", "role=Buyer type=signature print_date=no message_typeface=Arial message_size=10 message_weight=regular message_style=normal ")
+
+endif()
+
+if(eval(Trd1RegToBorC_std)="BC" | (eval(Trd1RegToBorC_std)="" & CoBuyerFullName<>""))
+
+  color(0, 0, 0)
+  layer(5)
+  move(0.25, 3.188)
+  signature("", "", 0.410, 2.421, "Co-Buyer Signature", "role=CoBuyer type=signature print_date=no message_typeface=Arial message_size=10 message_weight=regular message_style=normal ")
+
+endif()
+
+if(eval(Trd1RegToBorC_std)="CB")
+
+  color(0, 0, 0)
+  layer(5)
+  move(0.25, 3.188)
+  signature("", "", 0.410, 2.421, "Buyer Signature", "role=Buyer type=signature print_date=no message_typeface=Arial message_size=10 message_weight=regular message_style=normal ")
+
+endif()
+
+if(eval(Trd1RegToBorC_std)="CB" | eval(Trd1RegToBorC_std)="C")
+
+  color(0, 0, 0)
+  layer(5)
+  move(0.25, 0.25)
+  signature("", "", 0.410, 2.421, "Co-Buyer Signature", "role=CoBuyer type=signature print_date=no message_typeface=Arial message_size=10 message_weight=regular message_style=normal ")
+
+endif()
+
+cell(0, 0, 1)
+typeface("univers")
+sep(0.000)
+size(8.000)
+lpi(6.000)
+weight("medium")
+style("regular")
+horizontal("left")
+vertical("baseline")
+color(0, 0, 0)
+angle(0)
+symbolset("Windows 3.1 Latin 1")
+
+
+breakgroup("", "", "")
 [APR - Product Forms (w/ Lease Money Factor) (purch/lease trinary)]
 WDMCopyControl("ADPShortcut")
 color(0, 0, 0)

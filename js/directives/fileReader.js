@@ -14,7 +14,6 @@ eFormsBuilder.directive("filelistBind", [ 'Data',
               $scope.$apply(function(){
                 var contents = evt.target.result;
                 Data.setTextContents(contents);
-
               });
 
             }

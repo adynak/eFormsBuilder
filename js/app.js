@@ -9,7 +9,8 @@ var eFormsBuilder = angular.module('eFormsBuilder',
             'ui.grid.grouping', 
             'ui.bootstrap',
             'ui.grid.selection',
-            'ui.grid.cellNav'
+            'ui.grid.cellNav',
+            'ngClickCopy'
         ]);
 
 eFormsBuilder.config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {

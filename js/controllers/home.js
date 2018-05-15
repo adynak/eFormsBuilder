@@ -17,10 +17,14 @@ eFormsBuilder.controller('HomeController',
 
             var showFilename = false;
             if (typeof(shortcuts) != 'undefined'){
-                $scope.excelFilename = 'catsndogs';
-                $scope.sheetNames    = ["View Shortcuts"];
-                showFilename = true;
-                $scope.prompts.menuOpenFile = txtSideMenu.file + ': ' + 'raininspain';
+                if (shortcuts.length > 0){
+                    $scope.excelFilename = 'catsndogs';
+                    $scope.sheetNames    = ["View Shortcuts"];
+                    showFilename = true;
+                    // $scope.prompts.menuOpenFile = txtSideMenu.file + ': ' + 'raininspain';
+                    $location.path("/shortcuts");
+                }
+
             }
             return showFilename;
         }
