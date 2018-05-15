@@ -1,0 +1,221 @@
+[Signatures - Buyer and Cobuyer Trade 1 B/C/BC/CB/O scenario]
+WDMCopyControl("ADPShortcut")
+
+if(eval(Trd1RegToBorC_std)="B" | eval(Trd1RegToBorC_std)="O" | eval(Trd1RegToBorC_std)="BC" | eval(Trd1RegToBorC_std)="")
+
+  color(0, 0, 0)
+  layer(5)
+  move(0.25, 0.25)
+  signature("", "", 0.410, 2.421, "Buyer Signature", "role=Buyer type=signature print_date=no message_typeface=Arial message_size=10 message_weight=regular message_style=normal ")
+
+endif()
+
+if(eval(Trd1RegToBorC_std)="BC" | (eval(Trd1RegToBorC_std)="" & CoBuyerFullName<>""))
+
+  color(0, 0, 0)
+  layer(5)
+  move(0.25, 3.188)
+  signature("", "", 0.410, 2.421, "Co-Buyer Signature", "role=CoBuyer type=signature print_date=no message_typeface=Arial message_size=10 message_weight=regular message_style=normal ")
+
+endif()
+
+if(eval(Trd1RegToBorC_std)="CB")
+
+  color(0, 0, 0)
+  layer(5)
+  move(0.25, 3.188)
+  signature("", "", 0.410, 2.421, "Buyer Signature", "role=Buyer type=signature print_date=no message_typeface=Arial message_size=10 message_weight=regular message_style=normal ")
+
+endif()
+
+if(eval(Trd1RegToBorC_std)="CB" | eval(Trd1RegToBorC_std)="C")
+
+  color(0, 0, 0)
+  layer(5)
+  move(0.25, 0.25)
+  signature("", "", 0.410, 2.421, "Co-Buyer Signature", "role=CoBuyer type=signature print_date=no message_typeface=Arial message_size=10 message_weight=regular message_style=normal ")
+
+endif()
+
+cell(0, 0, 1)
+typeface("univers")
+sep(0.000)
+size(8.000)
+lpi(6.000)
+weight("medium")
+style("regular")
+horizontal("left")
+vertical("baseline")
+color(0, 0, 0)
+angle(0)
+symbolset("Windows 3.1 Latin 1")
+
+
+breakgroup("", "", "")
+[X for New, Used, Demo, Car and Truck]
+WDMCopyControl("ADPShortcut")
+
+if(upper(left(VehModelType,1))="C")
+
+  color(0, 0, 0)
+  layer(5)
+  move(0.251, 0.846)
+  typeface("univers")
+  weight("bold")
+  style("regular")
+  symbolset("Windows 3.1 Latin 1")
+  size(10.000)
+  lpi(6.000)
+  sep(0.000)
+  horizontal("left")
+  vertical("baseline")
+  angle(0)
+  text("X")
+
+endif()
+
+if(upper(left(VehModelType,1))="T")
+
+  color(0, 0, 0)
+  layer(5)
+  move(0.377, 0.846)
+  typeface("univers")
+  weight("bold")
+  style("regular")
+  symbolset("Windows 3.1 Latin 1")
+  size(10.000)
+  lpi(6.000)
+  sep(0.000)
+  horizontal("left")
+  vertical("baseline")
+  angle(0)
+  text("X")
+
+endif()
+
+if(upper(left(VehStockType,1))="D")
+
+  color(0, 0, 0)
+  layer(5)
+  move(0.514, 0.252)
+  typeface("univers")
+  weight("bold")
+  style("regular")
+  symbolset("Windows 3.1 Latin 1")
+  size(10.000)
+  lpi(6.000)
+  sep(0.000)
+  horizontal("left")
+  vertical("baseline")
+  angle(0)
+  text("X")
+
+endif()
+
+if(upper(left(VehStockType,1))="N")
+
+  color(0, 0, 0)
+  layer(5)
+  move(0.25, 0.253)
+  typeface("univers")
+  weight("bold")
+  style("regular")
+  symbolset("Windows 3.1 Latin 1")
+  size(10.000)
+  lpi(6.000)
+  sep(0.000)
+  horizontal("left")
+  vertical("baseline")
+  angle(0)
+  text("X")
+
+endif()
+
+if(upper(left(VehStockType,1))="U")
+
+  color(0, 0, 0)
+  layer(5)
+  move(0.379, 0.25)
+  typeface("univers")
+  weight("bold")
+  style("regular")
+  symbolset("Windows 3.1 Latin 1")
+  size(10.000)
+  lpi(6.000)
+  sep(0.000)
+  horizontal("left")
+  vertical("baseline")
+  angle(0)
+  text("X")
+
+endif()
+
+cell(0, 0, 1)
+typeface("univers")
+sep(0.000)
+size(8.000)
+lpi(6.000)
+weight("medium")
+style("regular")
+horizontal("left")
+vertical("baseline")
+color(0, 0, 0)
+angle(0)
+symbolset("Windows 3.1 Latin 1")
+
+
+breakgroup("", "", "")
+[Signatures - Buyer and Cobuyer Trade 1 B/C/BC/CB/O scenario]
+WDMCopyControl("ADPShortcut")
+
+if(eval(Trd1RegToBorC_std)="B" | eval(Trd1RegToBorC_std)="O" | eval(Trd1RegToBorC_std)="BC" | eval(Trd1RegToBorC_std)="")
+
+  color(0, 0, 0)
+  layer(5)
+  move(0.25, 0.25)
+  signature("", "", 0.410, 2.421, "Buyer Signature", "role=Buyer type=signature print_date=no message_typeface=Arial message_size=10 message_weight=regular message_style=normal ")
+
+endif()
+
+if(eval(Trd1RegToBorC_std)="BC" | (eval(Trd1RegToBorC_std)="" & CoBuyerFullName<>""))
+
+  color(0, 0, 0)
+  layer(5)
+  move(0.25, 3.188)
+  signature("", "", 0.410, 2.421, "Co-Buyer Signature", "role=CoBuyer type=signature print_date=no message_typeface=Arial message_size=10 message_weight=regular message_style=normal ")
+
+endif()
+
+if(eval(Trd1RegToBorC_std)="CB")
+
+  color(0, 0, 0)
+  layer(5)
+  move(0.25, 3.188)
+  signature("", "", 0.410, 2.421, "Buyer Signature", "role=Buyer type=signature print_date=no message_typeface=Arial message_size=10 message_weight=regular message_style=normal ")
+
+endif()
+
+if(eval(Trd1RegToBorC_std)="CB" | eval(Trd1RegToBorC_std)="C")
+
+  color(0, 0, 0)
+  layer(5)
+  move(0.25, 0.25)
+  signature("", "", 0.410, 2.421, "Co-Buyer Signature", "role=CoBuyer type=signature print_date=no message_typeface=Arial message_size=10 message_weight=regular message_style=normal ")
+
+endif()
+
+cell(0, 0, 1)
+typeface("univers")
+sep(0.000)
+size(8.000)
+lpi(6.000)
+weight("medium")
+style("regular")
+horizontal("left")
+vertical("baseline")
+color(0, 0, 0)
+angle(0)
+symbolset("Windows 3.1 Latin 1")
+
+
+breakgroup("", "", "")

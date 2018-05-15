@@ -1,0 +1,14 @@
+<div ng-controller="ShortcutsController" class="input-group">
+	<input type="text" 
+		   class="form-control" 
+		   placeholder="filter" 
+		   name="filter"
+		   ng-change="grid.appScope.filterGrid(filterText)"
+		   ng-model="filterText">
+	<div class="input-group-btn">
+		<button class="btnGlyph">
+			<i class="glyphicon glyphicon-remove" 
+			   ng-click="removeFilter()"></i>
+		</button>
+	</div>
+</div>  

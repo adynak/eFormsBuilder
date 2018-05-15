@@ -1,0 +1,25 @@
+<div>
+  <div>
+    <div>
+      <h4>&nbsp;&nbsp;{{prompts.shortcutName}}</h4>
+    </div>
+
+    <div>
+      <div class="grid2"
+           ui-grid="gridOptions"
+           style="font-weight: normal;"
+           ui-grid-selection>
+      </div>
+    </div>
+    
+    <br>
+    <div style="text-align: center;">
+      <button type="button" class="btn btn-success" ng-click="copyAll()">{{prompts.btnCopyAll}}</button>
+      <button type="button" class="btn btn-success" ng-click="copySelected()">{{prompts.btnCopySelected}}</button>
+      <button type="button" class="btn btn-success" ng-click="cancel()">{{prompts.btnCancel}}</button>
+    </div>
+
+    <br>
+
+  </div>
+</div>
